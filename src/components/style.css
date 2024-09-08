@@ -1,0 +1,75 @@
+/* Container styling */
+.container {
+  width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Input field styling */
+.container input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ff0000;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+/* Suggestion list container styling */
+.suggest-page {
+  position: absolute;
+  top: 42px; /* Adjust based on the height of your input field */
+  left: 0;
+  right: 0;
+  background-color: #e2e2e2;
+  border: 1px solid #ff5858;
+  border-top: none; /* Avoid double border when suggestions are shown */
+  border-radius: 0 0 8px 8px;
+  max-height: 150px; /* Limit height of suggestion box */
+  overflow-y: auto; /* Enable scrolling when content exceeds max height */
+  z-index: 1000;
+  /* Ensure the dropdown appears above other content */
+}
+
+/* Suggestion list styling */
+.suggest-page ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Individual suggestion styling */
+.suggest-page ul li {
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Active suggestion styling */
+.suggest-page ul li.active {
+  background-color: #d6d6d6; /* Highlight color for active suggestion */
+  font-weight: bold;
+}
+
+.highlight {
+  color: rgb(5, 134, 255);
+}
+
+.error {
+  color: red;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid red;
+  border-radius: 4px;
+  margin-top: 10px;
+  background-color: #ffe6e6;
+}
+
+.loading {
+  color: #06be00;
+  padding: 10px;
+  font-size: 14px;
+
+  margin-top: 10px;
+}
